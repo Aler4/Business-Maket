@@ -1,0 +1,76 @@
+.header {
+	height: 94px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: "Lato";
+
+}
+
+.header-logo {
+	width: 51px;
+	height: 47px;
+}
+
+.site-menu {
+	-max-width: 90%;
+}
+
+.site-menu ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.site-menu li {
+	height: 34px;
+	padding: 10px 20px;
+	color: rgb( 112, 157, 202 );
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+
+.site-menu a {
+	text-decoration: none;
+	font-size: 13.5px;
+	font-family: "Liberation Sans";
+	color: inherit;
+	font-weight: 500;
+	text-align: center;
+}
+
+
+.site-menu li:hover  {
+	border-radius: 2px;
+	background-color: rgb( 255, 187, 66 );
+	color: rgb( 255, 255, 255 );
+
+	-webkit-transition: all;
+
+	-o-transition: all;
+
+	transition: all; 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+}

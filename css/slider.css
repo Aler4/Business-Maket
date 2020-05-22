@@ -1,0 +1,126 @@
+.laptop-slider {
+  position: relative;
+  margin: 20px auto 0;
+  width: 445px;
+  height: 264px;
+  border: 10px solid rgb(0, 0, 0);
+  border-bottom: 35px solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-transform: translateY(40%);
+  -ms-transform: translateY(40%);
+  transform: translateY(40%);
+  background-color: rgb( 76, 85, 89 );
+}
+
+.laptop-slider::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 647px;
+  height: 30px;
+  bottom: -60px;
+  left: -100px;
+  background-image: url(../image/laptop-slider/slider-bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slides {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  visibility: hidden;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+}
+.slide_img {
+  display: none;
+}
+
+#arrow_next label, #arrow_prev label {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.2;
+  visibility: hidden;
+  top: 35%;
+
+}
+#arrow_next label img, #arrow_prev label img {
+ width: 75px;
+ height: 75px;
+}
+
+#arrow_next label {
+  right: 0;
+}
+
+#arrow_prev label{
+  left: 0;
+}
+#arrow_next label:hover, #arrow_prev label:hover {
+  opacity: 0.8;
+}
+
+.switchers {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: -90px;
+  text-align: center;
+}
+
+.switcher {
+  background: rgb( 255, 255, 255);
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(211, 211, 211);
+  position: relative;
+  top: 7px;
+  margin: 0 4px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#img_1:checked ~ #first,
+#img_2:checked ~ #second,
+#img_3:checked ~ #third,
+#img_4:checked ~ #fourth,
+#img_5:checked ~ #fifth {
+
+  visibility: visible;
+  /*width: 100%;*/
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  
+}
+
+#img_1:checked ~ div #switcher1,
+#img_2:checked ~ div #switcher2,
+#img_3:checked ~ div #switcher3,
+#img_4:checked ~ div #switcher4,
+#img_5:checked ~ div #switcher5 {
+  background: rgb(211, 211, 211);
+  border-color: rgb( 97, 166, 218 );
+}
+
+#img_1:checked ~ #arrow_next label:nth-child(2),
+#img_2:checked ~ #arrow_next label:nth-child(3),
+#img_3:checked ~ #arrow_next label:nth-child(4),
+#img_4:checked ~ #arrow_next label:nth-child(5),
+#img_5:checked ~ #arrow_next label:nth-child(1) {
+  visibility: visible;
+}
+
+#img_1:checked ~ #arrow_prev label:nth-child(5),
+#img_2:checked ~ #arrow_prev label:nth-child(1),
+#img_3:checked ~ #arrow_prev label:nth-child(2),
+#img_4:checked ~ #arrow_prev label:nth-child(3),
+#img_5:checked ~ #arrow_prev label:nth-child(4) {
+  visibility: visible;
+}

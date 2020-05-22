@@ -1,0 +1,69 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+  
+}
+
+
+footer .site-menu li, .phone  {
+  color: rgb( 57, 75, 80 );
+
+}
+
+.phone  {
+  font-size: 22.383px;
+  font-family: "Liberation Sans";
+  line-height: 1.072;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+}
+
+.phone img {
+  height: 20px;
+  margin-top: 2px;
+}
+.social-web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+.social-web li {
+  padding-right: 18px;
+  cursor: pointer;
+}
+.social-web li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+footer p {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgb( 255, 255, 255 );
+  background: rgb( 112, 157, 202 );
+  line-height: 46px;
+  width: 100%;
+  text-align: center;
+}

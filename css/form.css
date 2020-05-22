@@ -1,0 +1,68 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: inherit;
+}
+
+form input {
+  background-position: 15px;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 45px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: 0;
+  border: none;
+}
+.banner-form__name {
+  background-image: url("../image/form/name-icon.png");
+  padding-left: 42px;
+
+}
+.banner-form__mail {
+  background-image: url("../image/form/mail-icon.png");
+  padding-left: 42px;
+
+}
+.banner-form__phone {
+  background-image: url("../image/form/phone-icon.png");
+  padding-left: 42px;
+
+}
+.banner-form__req {
+  width: 212px;
+  color: rgb( 255, 255, 255 );
+  background: rgb( 255, 187, 66 );
+  font-weight: 700;
+}
+.banner-form__req:hover {
+  cursor: pointer;
+  background: rgb( 230, 153, 15 );
+  -webkit-transition: 0.4s ease-in;
+  -o-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input:invalid {
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(255, 0, 0, 0.83);
+  box-shadow: 0px 0px 3px 1px rgba(255, 0, 0, 0.83);;
+}
+
+}
